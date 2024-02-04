@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/loginimg"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:srcCompat="@drawable/signup_background" />
+
+    <TextView
+        android:layout_marginBottom="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get started"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="60sp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custome_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/signuotxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custome_edittext"
+                android:hint="Number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custome_edittext"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+            <EditText
+                android:id="@+id/signup_passwordconfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custome_edittext"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+
+
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/loginbtn_background"
+                android:backgroundTint="@color/dark_blue"
+                android:onClick="onClick"
+                android:text="Signup"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:text="By proceeding you are agree with the\nterms and privacy policy"
+                android:autoSizeMaxTextSize="14sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="50sp"
+                android:id="@+id/signup"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45sp"
+        android:text="Already have a account? Login"
+        android:textAlignment="textStart" />
+
+</LinearLayout>

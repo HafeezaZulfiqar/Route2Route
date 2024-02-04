@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#372D83"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/frontimg" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368"
+        app:srcCompat="@drawable/arc_1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="541dp"
+        android:layout_height="730dp"
+        app:cardBackgroundColor="#F1F0F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="18dp"
+            android:text="Welcome to \n Route2Route"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LoginBtn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/loginbtn_background"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="210dp"
+            android:text="OR"
+            android:textSize="25dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupBtn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/background_btn_intro"
+            android:text="Signup"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

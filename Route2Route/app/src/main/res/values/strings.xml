@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Route2Route</string>
+    <string name="link">
+        <a href="www.google.com">forget password</a>
+    </string>
+
+    <string name="my_API_Key">AIzaSyBTfKT8nI_2NzWg4e7qitxcrNq7mIlSL9A</string>
+</resources>

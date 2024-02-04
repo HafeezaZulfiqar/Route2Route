@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteFinder">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backarrow" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F9F9F9"
+        android:text="Find Your Routes"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <ImageView
+        android:layout_width="541dp"
+        android:layout_height="269dp"
+        android:src="@drawable/img16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/from"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custome_edittext"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="8dp"
+            android:hint="From"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black" />
+
+        <EditText
+            android:id="@+id/to"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/custome_edittext"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="8dp"
+            android:hint="To"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black" />
+
+        <Button
+            android:id="@+id/findroutes"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/loginbtn_background"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Find"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

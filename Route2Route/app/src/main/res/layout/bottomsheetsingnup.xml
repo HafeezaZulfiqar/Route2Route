@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialoguebackground"
+    >
+
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Add Money From"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/NumberSignup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/signupoption_btn_background"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/EmailSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/signupoption_btn_background"
+        android:onClick="onClick"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+</LinearLayout>
